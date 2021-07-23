@@ -49,6 +49,8 @@
 #include <string.h>
 #include <sys/types.h>
 
+#pragma comment(lib, "ws2_32.lib")
+
 static bool windows_source_addr_factory_get_source_addr(
     address_sorting_source_addr_factory* factory,
     const address_sorting_address* dest_addr,
