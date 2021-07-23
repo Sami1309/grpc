@@ -11,7 +11,7 @@
 #include "upb/port_def.inc"
 
 #pragma comment(lib, "ws2_32.lib")
-#pragma comment(lib, "upb/def.lib")
+// #pragma comment(lib, "upb/def.lib")
 
 typedef struct {
   size_t len;

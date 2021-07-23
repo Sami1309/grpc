@@ -8,9 +8,9 @@
 #include "upb/port_def.inc"
 
 #pragma comment(lib, "ws2_32.lib")
-#pragma comment(lib, "upb/msg.lib")
-#pragma comment(lib, "ubp/table.int.lib")
-#pragma comment(lib, "ubp/reflection.lib")
+// #pragma comment(lib, "upb/msg.lib")
+// #pragma comment(lib, "ubp/table.int.lib")
+// #pragma comment(lib, "ubp/reflection.lib")
 
 static size_t get_field_size(const upb_msglayout_field* f) {
   static unsigned char sizes[] = {
