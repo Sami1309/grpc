@@ -155,7 +155,6 @@ def _symlink_genrule_for_dir(
 def _get_python_bin(repository_ctx, bin_path_key, default_bin_path, allow_absent):
     """Gets the python bin path."""
     python_bin = repository_ctx.os.environ.get(bin_path_key, default_bin_path)
-    _fail("{}".format(python_bin))
     if not repository_ctx.path(python_bin).exists:
         # It's a command, use 'which' to find its path.
         python_bin_path = repository_ctx.which(python_bin)
