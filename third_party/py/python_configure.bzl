@@ -161,6 +161,7 @@ def _get_python_bin(repository_ctx, bin_path_key, default_bin_path, allow_absent
     else:
         # It's a path, use it as it is.
         python_bin_path = python_bin
+    _fail("{} {} {} {}".format(repository_ctx, bin_path_key, default_bin_path, allow_absent))
     if python_bin_path != None:
         return str(python_bin_path)
     if not allow_absent:
